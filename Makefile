@@ -1,5 +1,5 @@
 SRCS = srcs/*.c
-OBJECTS = src/*.o 
+OBJECTS = src/*.o
 NAME = libft.a
 FLAGS = -Werror -Wall
 
@@ -20,5 +20,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
-## DEBUG
