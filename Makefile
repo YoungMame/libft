@@ -1,7 +1,7 @@
 SRCS = $(wildcard ./ft_*.c)
 OBJECTS = $(SRCS:.c=.o)
 NAME = libft.a
-FLAGS = -Werror -Wall
+FLAGS = -Werror -Wall -Wextra
 
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
@@ -12,10 +12,10 @@ $(NAME): $(OBJECTS)
 all: $(NAME)
 
 clean:
-	rm -f $(NAME)
+	rm -f $(OBJECTS)
 
 fclean: clean
-	rm -f $(OBJECTS) *.out
+	rm -f $(NAME) *.out *.o
 
 re: fclean all
 
@@ -24,7 +24,7 @@ re: fclean all
 ## debug
 
 test: fclean $(NAME)
-	cc -o myprogram test.c -L ./ -l ft
-	./myprogram
+	cc -o myprogram.out test.c -L ./ -l ft
+	./myprogram.out
 
 
