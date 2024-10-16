@@ -16,7 +16,7 @@
 
 int	main()
 {
-	int test_char = 'f';
+	int test_char = 'l';
 	int test_int = 42;
 	char test_string[] = "Hello world";
 	char test_string_second[] = "from 42";
@@ -68,6 +68,19 @@ int	main()
 	// printf("strncmp(%s, %s, %zu) = %i\n", strncmp1, strncmp2, strncmp_size, strncmp(strncmp1, strncmp2, strncmp_size));
 
 	//ft_memchr
-	printf("ft_memchr(%s, %c, %zu) = %s\n", test_string, test_char, test_size, ft_memchr(test_string, test_char, test_size));
+	// printf("ft_memchr(%s, %c, %zu) = %p\n", test_string, test_char, test_size, ft_memchr(test_string, test_char, test_size));
 
+	//ft_memcmp
+	// char	memcmp1[] = "THC";
+	// char	memcmp2[] = "TH";
+	// size_t	memcmp_size = sizeof(char) * 3;
+	// printf("memcmp(%s, %s, %zu) = %i\n", memcmp1, memcmp2, memcmp_size, ft_memcmp(memcmp1, memcmp2, memcmp_size));
+
+	//ft_atoi
+	const char	nptr[] = "      + 2";
+	printf("ft_atoi(%s) = %i et le resultat atoi = %i\n", nptr, ft_atoi(nptr), atoi(nptr));
+
+	//ft_strdup
+	const char	strdup_string[] = "JESUISNRV";
+	printf("%s", ft_strdup(strdup_string));
 }
