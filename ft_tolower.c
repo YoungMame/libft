@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 15:39:12 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/16 15:22:04 by mduvey           ###   ########.fr       */
+/*   Created: 2024/10/16 16:01:31 by mduvey            #+#    #+#             */
+/*   Updated: 2024/10/16 16:05:31 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src,
-size_t dstsize)
+int	ft_tolower(int c)
 {
-	unsigned int	i;
-	unsigned int	lenght;
-
-	lenght = 0;
-	while (src[lenght])
-		lenght++;
-	i = 0;
-	while (src[i] && i < dstsize - 1)
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	if (dstsize)
-		dst[i] = '\0';
-	return (sizeof(char) * lenght);
+	if (c >= 65 && c <= 90)
+		c += 32;
+	return (c);
 }

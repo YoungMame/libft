@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:31:45 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/15 14:33:21 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/16 17:50:00 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	b = (unsigned char *)src;
 	i = 0;
 	while (i++ < n)
-	{
 		*a++ = *b++;
-	}
 	return (dest);
 }
