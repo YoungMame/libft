@@ -6,16 +6,13 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 15:33:33 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/15 11:27:55 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/16 15:08:16 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 48 && c <= 57))
-		return (1);
-	else
-		return (0);
+	return (c >= 48 && c <= 57);
 }
