@@ -77,10 +77,34 @@ int	main()
 	// printf("memcmp(%s, %s, %zu) = %i\n", memcmp1, memcmp2, memcmp_size, ft_memcmp(memcmp1, memcmp2, memcmp_size));
 
 	//ft_atoi
-	const char	nptr[] = "      + 2";
-	printf("ft_atoi(%s) = %i et le resultat atoi = %i\n", nptr, ft_atoi(nptr), atoi(nptr));
+	// const char	nptr[] = "      + 2";
+	// printf("ft_atoi(%s) = %i et le resultat atoi = %i\n", nptr, ft_atoi(nptr), atoi(nptr));
 
 	//ft_strdup
-	const char	strdup_string[] = "JESUISNRV";
-	printf("%s", ft_strdup(strdup_string));
+	// const char	strdup_string[] = "JESUISNRV";
+	// printf("%s\n", ft_strdup(strdup_string));
+
+	//ft_substr
+    // const char	substr_string[] = "JESUISNRV";
+    // const int	substr_index = 2;
+    // size_t		substr_size = 4; 
+    // char		*result = ft_substr(substr_string, substr_index, substr_size);
+    // printf("%s\n", result);
+
+    //ft_strjoin
+    // char  str1[] = "Hello ";
+    // char  str2[] = "World";
+    // char  *result;
+    // result = ft_strjoin(str1, str2);
+    // printf("%s\n", result);
+
+    //ft_strjoin
+    char  str1[] = "abcHello worldbcd";
+    char  str2[] = "abcd";
+    char  *result;
+    result = ft_strtrim(str1, str2);
+    printf("%s\n", result);
+
+
+
 }
