@@ -85,25 +85,45 @@ int	main()
 	// printf("%s\n", ft_strdup(strdup_string));
 
 	//ft_substr
-    // const char	substr_string[] = "JESUISNRV";
-    // const int	substr_index = 2;
-    // size_t		substr_size = 4; 
-    // char		*result = ft_substr(substr_string, substr_index, substr_size);
-    // printf("%s\n", result);
+	// const char	substr_string[] = "JESUISNRV";
+	// const int	substr_index = 2;
+	// size_t		substr_size = 4; 
+	// char		*result = ft_substr(substr_string, substr_index, substr_size);
+	// printf("%s\n", result);
 
-    //ft_strjoin
-    // char  str1[] = "Hello ";
-    // char  str2[] = "World";
-    // char  *result;
-    // result = ft_strjoin(str1, str2);
-    // printf("%s\n", result);
+	//ft_strjoin
+	// char  str1[] = "Hello ";
+	// char  str2[] = "World";
+	// char  *result;
+	// result = ft_strjoin(str1, str2);
+	// printf("%s\n", result);
 
-    //ft_strjoin
-    char  str1[] = "abcHello worldbcd";
-    char  str2[] = "abcd";
-    char  *result;
-    result = ft_strtrim(str1, str2);
-    printf("%s\n", result);
+	//ft_strjoin
+	// char  str1[] = "crisotoh";
+	// char  str2[] = "thc";
+	// char  *result;
+	// result = ft_strtrim(str1, str2);
+	// printf("%s\n", result);
+
+	//ft_strtrim
+	// char  str1[] = "crisotoh";
+	// char  str2[] = "thc";
+	// char  *result;
+	// result = ft_strtrim(str1, str2);
+	// printf("%s\n", result);
+
+	//ft_split
+	// 	char  str[] = "je||suis||un||nerd||e";
+	// char  sep = '|';
+	// char  **result;
+	// result = ft_split(str, sep);
+	// int i = 0;
+	// while(result[i])
+	// 	printf("%s\n", result[i++]);
+
+	//ft_itoa
+	int	number = 20;
+	printf("%s\n", ft_itoa(number));
 
 
 
