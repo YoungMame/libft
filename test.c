@@ -13,6 +13,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "libft.h"
+#include <fcntl.h>
+
+char get_c(unsigned int i, char c)
+{
+	return 'c';
+}
+
+void set_c(unsigned int i, char *c)
+{
+	c[i] = 'c';
+}
 
 int	main()
 {
@@ -122,9 +133,20 @@ int	main()
 	// 	printf("%s\n", result[i++]);
 
 	//ft_itoa
-	int	number = 20;
-	printf("%s\n", ft_itoa(number));
+	// int	number = 20;
+	// printf("%s\n", ft_itoa(number));
 
+	//ft_strmapi
+	// char str[] = "Hello";
+	// char *result = ft_strmapi(str, &get_c);
+	// printf("ft_strmapi = %s\n", result);
 
+	//ft_striteri
+	// char str[] = "Hello";
+	// ft_striteri(str, &set_c);
+	// printf("ft_strmapi = %s\n", str);
 
+	//ft_putchar_fd
+	// int fd = open("test.txt", O_RDWR);
+	// ft_putchar_fd('C', fd);
 }
