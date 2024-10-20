@@ -17,10 +17,8 @@
 
 static int	ft_sqrt_ten(int	pow)
 {
-	int	i;
 	int	result;
 
-	i = 0;
 	result = 1;
 	while (pow > 1)
 	{

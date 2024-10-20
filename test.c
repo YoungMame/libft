@@ -149,4 +149,13 @@ int	main()
 	//ft_putchar_fd
 	// int fd = open("test.txt", O_RDWR);
 	// ft_putchar_fd('C', fd);
+
+	//ft_putnumber_fd
+	// int fd = open("test.txt", O_RDWR);
+	// ft_putnbr_fd(-999, fd);
+
+	//ft_lstnew
+	char	*string = "Hello world";
+	t_list value = *ft_lstnew(string);
+	printf("%s", value.content);
 }
