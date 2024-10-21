@@ -40,7 +40,7 @@ re: fclean all
 ## debug
 
 test: fclean $(NAME)
-	cc -o myprogram.out test.c -L ./ -l ft
-	./myprogram.out
+	cc -o myprogram.out ../libft_test/test.c -L ./ -l ft
+	./myprogram.out strtrim
 
 
