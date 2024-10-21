@@ -39,8 +39,8 @@ re: fclean all
 
 ## debug
 
-test: fclean $(NAME)
+test: fclean bonus
 	cc -o myprogram.out ../libft_test/test.c -L ./ -l ft
-	./myprogram.out strtrim
+	./myprogram.out lstnew
 
 
