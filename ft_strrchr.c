@@ -10,23 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
-{
-	char	*ptr;
-	char	*value;
+#include "libft.h"
 
-	value = 0;
-	ptr = (char *)s;
-	while (*ptr)
-	{
-		if (*ptr == c)
-			value = ptr;
-		ptr++;
-	}
-	if (value)
-		return (value);
-	if (c == '\0')
-		return (ptr);
-	ptr = 0;
-	return (ptr);
+char    *ft_strrchr(const char *s, int c)
+{
+    int    index;
+
+    index = ft_strlen(s) + 1;
+    while (index--)
+    {
+        if (s[index] == (char)c)
+            return ((char *)s + index);
+    }
+    return (NULL);
 }

@@ -10,19 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
-{
-	char	*ptr;
+#include "libft.h"
 
-	ptr = (char *)s;
-	while (*ptr)
-	{
-		if (*ptr == c)
-			return (ptr);
-		ptr++;
-	}
-	if (c == '\0')
-		return (ptr);
-	ptr = 0;
-	return (ptr);
+char    *ft_strchr(const char *s, int c)
+{
+    size_t    index;
+
+	if (!s)
+		return (0);
+    index = 0;
+    while (s[index])
+    {
+        if (s[index] == (char)c)
+            return ((char *)&s[index]);
+        index++;
+    }
+    if ((char)c == '\0')
+        return ((char *)&s[index]);
+    return (0);
 }

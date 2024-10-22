@@ -41,6 +41,6 @@ re: fclean all
 
 test: fclean bonus
 	cc -o myprogram.out ../libft_test/test.c -L ./ -l ft
-	./myprogram.out itoa
+	./myprogram.out strchr
 
 
