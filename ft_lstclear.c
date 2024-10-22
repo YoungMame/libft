@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:47:02 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/22 12:10:43 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/22 17:40:41 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		temp = ptr->next;
 		ft_lstdelone(ptr, del);
 		ptr = temp;
+		*lst = ptr;
 	}
 	return ;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: MelanieBouteiller <MelanieBouteiller@st    +#+  +:+       +#+        */
+/*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 19:16:42 by MelanieBout       #+#    #+#             */
-/*   Updated: 2024/10/20 19:23:59 by MelanieBout      ###   ########.fr       */
+/*   Updated: 2024/10/22 17:44:02 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,8 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	while (s[i])
+	{
 		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 }
