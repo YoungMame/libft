@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (s1[end] && (end >= start) && ft_is_forbidden(s1[end], set))
 		end--;
-	str = malloc(sizeof(char) * (end - start + 1));
+	str = malloc(sizeof(char) * (end - start + 2));
 	if (str == NULL)
 		return (NULL);
 	while (start <= end)

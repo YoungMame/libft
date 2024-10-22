@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 15:50:13 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/17 16:57:03 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/22 16:51:59 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,32 +15,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static int	ft_sqrt_ten(int	pow)
-{
-	int	result;
-
-	result = 1;
-	while (pow > 1)
-	{
-		result *= 10;
-		pow--;
-	}
-	return (result);
-}
-
 static int	ft_get_digits_count(int n)
 {
-	int	multiplicator;
 	int	result;
 
-	multiplicator = 10;
 	result = 1;
-	if (!n)
-		return (0);
-	while (n / multiplicator > 0) 
+	if (n < 0)
+		n = -n;
+	while (n / 10 > 0)
 	{
-		multiplicator *= 10;
-		result += 1;
+		n /= 10;
+		result++;
 	}
 	return (result);
 }
@@ -48,21 +33,27 @@ static int	ft_get_digits_count(int n)
 char	*ft_itoa(int n)
 {
 	int		digits_count;
-	int		multiplicator;
 	char	*str;
-	int		i;
+	int		is_negative;
 
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	is_negative = (n < 0);
 	digits_count = ft_get_digits_count(n);
-	multiplicator = ft_sqrt_ten(digits_count);
-	str = malloc(sizeof(char) * (digits_count + 1));
-	i = 0;
-	while (i < digits_count)
+	str = malloc(sizeof(char) * (digits_count + 1 + is_negative));
+	if (str == NULL)
+		return (NULL);
+	if (is_negative)
 	{
-		str[i] = (n / multiplicator) + '0';
-		n = n % multiplicator;
-		multiplicator /= 10;
-		i++;
+		str[0] = '-';
+		n = -n;
 	}
-	str[i] = '\0';
+	str[digits_count + is_negative] = '\0';
+	while (digits_count > 0)
+	{
+		digits_count--;
+		str[digits_count + is_negative] = (n % 10) + '0';
+		n /= 10;
+	}
 	return (str);
 }

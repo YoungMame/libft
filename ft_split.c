@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 09:10:09 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/17 15:36:33 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/22 15:00:39 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_count_words(const char *str, char c)
+static int	ft_count_words(const char *str, char c)
 {
 	int	i;
 	int	in_word;
@@ -39,12 +39,12 @@ int	ft_count_words(const char *str, char c)
 	return (total);
 }
 
-char	*ft_dup(const char *str, int min, int max)
+static char	*ft_dup(const char *str, int min, int max)
 {
 	char	*dest;
 	int		i;
 
-	dest = malloc(sizeof(char) * (max - min + 1));
+	dest = malloc(sizeof(char) * (max - min + 2));
 	i = 0;
 	if (dest == NULL)
 		return (NULL);
