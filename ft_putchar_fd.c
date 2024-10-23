@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: MelanieBouteiller <MelanieBouteiller@st    +#+  +:+       +#+        */
+/*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/20 19:00:56 by MelanieBout       #+#    #+#             */
-/*   Updated: 2024/10/20 19:24:11 by MelanieBout      ###   ########.fr       */
+/*   Created: 2024/10/23 18:16:12 by mduvey            #+#    #+#             */
+/*   Updated: 2024/10/23 18:16:13 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

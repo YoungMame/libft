@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: MelanieBouteiller <MelanieBouteiller@st    +#+  +:+       +#+        */
+/*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 18:28:13 by MelanieBout       #+#    #+#             */
-/*   Updated: 2024/10/18 19:03:24 by MelanieBout      ###   ########.fr       */
+/*   Created: 2024/10/23 18:15:05 by mduvey            #+#    #+#             */
+/*   Updated: 2024/10/23 18:15:06 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
