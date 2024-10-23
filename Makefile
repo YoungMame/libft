@@ -9,8 +9,7 @@ SOURCES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 	ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 BONUSES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 	ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
-	ft_lstclear.c 
-	# ft_lstiter.c ft_lstmap.c
+	ft_lstclear.c ft_lstiter.c ft_lstmap.c
 OBJECTS = $(SOURCES:.c=.o)
 BONUS_OBJECTS = $(BONUSES:.c=.o)
 NAME = libft.a
@@ -39,8 +38,8 @@ re: fclean all
 
 ## debug
 
-test: fclean bonus
-	cc -o myprogram.out ../libft_test/test.c -L ./ -l ft
-	./myprogram.out strchr
+# test: fclean bonus
+# 	cc -o myprogram.out ../libft_test/test.c -L ./ -l ft
+# 	./myprogram.out strchr
 
 
