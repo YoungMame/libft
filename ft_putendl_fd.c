@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: MelanieBouteiller <MelanieBouteiller@st    +#+  +:+       +#+        */
+/*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 19:24:54 by MelanieBout       #+#    #+#             */
-/*   Updated: 2024/10/20 19:25:46 by MelanieBout      ###   ########.fr       */
+/*   Updated: 2024/10/23 15:16:51 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

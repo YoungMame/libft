@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 19:27:05 by MelanieBout       #+#    #+#             */
-/*   Updated: 2024/10/22 17:36:12 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/23 15:20:54 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,12 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (fd < 0)
-        return ;
+		return ;
 	if (n == -2147483648)
 	{
 		ft_putstr_fd("-2147483648", fd);
 		return ;
 	}
-		
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);

@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 09:36:21 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/22 17:31:39 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/23 15:29:38 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (*lst == NULL)
 		*lst = new;
-	else 
+	else
 	{
 		ptr = ft_lstlast(*lst);
 		ptr->next = new;
