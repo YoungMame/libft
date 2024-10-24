@@ -18,8 +18,6 @@ size_t dstsize)
 	size_t	i;
 	size_t	src_l;
 
-	if (!dst || !src)
-		return (0);
 	i = 0;
 	src_l = ft_strlen(src);
 	if (dstsize != 0)

@@ -6,7 +6,7 @@
 /*   By: mduvey <mduvey@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 18:15:50 by mduvey            #+#    #+#             */
-/*   Updated: 2024/10/23 18:15:52 by mduvey           ###   ########.fr       */
+/*   Updated: 2024/10/24 17:25:06 by mduvey           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ static char	*ft_dup(const char *str, int min, int max)
 	int		i;
 
 	dest = malloc(sizeof(char) * (max - min + 2));
+	if (!dest)
+		return (NULL);
 	i = 0;
 	if (dest == NULL)
 		return (NULL);
@@ -64,9 +66,9 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 	result = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
-	min = -1;
 	if (!result)
 		return (NULL);
+	min = -1;
 	while (s[i])
 	{
 		if (!(s[i] == c) && min == -1)
