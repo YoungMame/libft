@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_is_forbidden(char c, const char *set)
+static int	ft_is_forbidden(char c, const char *set)
 {
 	int	i;
 
