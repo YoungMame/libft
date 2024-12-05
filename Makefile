@@ -29,6 +29,7 @@ SOURCES = \
 	to/ft_toupper.c \
 	to/ft_tolower.c \
 	to/ft_atoi.c \
+	to/ft_atod.c \
 	to/ft_itoa.c \
 	to/ft_itoa_base.c \
 	nbr/ft_putnbr.c \
